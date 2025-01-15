@@ -1,0 +1,22 @@
+{
+  "name": "adaptive_maket",
+  "version": "1.0.0",
+  "description": "Landing page about plants",
+  "source": "index.html",
+  "scripts": {
+    "sass:watch": "sass --style=expanded --watch styles:dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/powder-rose/plants_landing.git"
+  },
+  "author": "Powder R",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/powder-rose/plants_landing/issues"
+  },
+  "homepage": "https://github.com/powder-rose/plants_landing#readme",
+  "dependencies": {
+    "sass": "^1.83.4"
+  }
+}
