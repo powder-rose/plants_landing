@@ -11,9 +11,65 @@
     <title>Природные артефакты</title>
 </head>
 <body>
-    hello
-    <svg> 
-        <use href="./assets/sprites.svg#logo">
-    </svg>
+<header class="header">
+     
+    <div class="logo">
+         <svg class="logo__image"> 
+        <a href=""><use  href="./assets/sprites.svg#logo"></a>
+        </svg>
+    </div>
+<div class="mobile-menu">
+    <label for="checkboxID" class="mobile-menu__burger">
+        <svg class="burger__icon">
+            <use  href="./assets/sprites.svg#burger-icon">
+        </svg>
+    </label> 
+
+    <input type="checkbox" id="checkboxID" class="mobile-menu__toggler">
+    <nav class="mobile-menu__nav">
+        <ul class="mobile-menu__nav-list">
+            <li class="mobile-menu__nav-list__item"> <a class="mobile-menu__nav-list__item-link" href="#">Каталог</a> </li>
+            <li class="mobile-menu__nav-list__item"> <a class="mobile-menu__nav-list__item-link" href="#">Галерея</a> </li>
+            <li class="mobile-menu__nav-list__item"> <a class="mobile-menu__nav-list__item-link" href="#">О лаборатории</a> </li>
+            <li class="mobile-menu__nav-list__item"> <a class="mobile-menu__nav-list__item-link" href="#">Контакты</a> </li>
+        </ul>
+        <label for="checkboxID" class="mobile-menu__burger-cross">
+            <svg class="burger__cross">
+                <use  href="./assets/sprites.svg#burger-cross">
+            </svg>
+        </label>
+    </nav>
+
+
+</div>
+
+    <nav class="nav" aria-label="Навигация">
+        <ul class="nav__list">
+            <li class="list__item"><a href="#" class="list__item-link">Каталог</a></li>
+            <li class="list__item"><a href="#" class="list__item-link">Галерея</li></a>
+            <li class="list__item"><a href="#" class="list__item-link">О лаборатории</a></li>
+            <li class="list__item"><a href="#" class="list__item-link">Контакты</a></li>
+        </ul>
+    </nav>
+    <div class="icons">
+        <svg class="login-icon" >
+           <a><use href="/assets/sprites.svg#login">
+           </a>
+        </svg>
+        <svg class="search-icon">
+            <a><use href="/assets/sprites.svg#search"></use></a>
+        </svg>
+      </div>
+</header>
+
+<main class="main">
+    <section class="main__wrapper">
+        <h1 class="main__title">Крупнейшая коллекция природных артефактов</h1>
+<p class="main__desc">Являясь всего лишь частью общей картины, интерактивные прототипы, которые представляют собой яркий пример европейского типа политической и социальной культуры</p>
+<button class="main__btn">Исследовать</button>
+    </section>
+   
+</main>
+  
 </body>
 </html>
