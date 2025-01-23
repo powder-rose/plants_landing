@@ -3,7 +3,7 @@
 @use "sass:color";
 
 .header {
-    width: 100%;
+    width: 100vw;
     margin: 0 auto;
     height: 60px;
     background-color: v.$dark_green_color;
@@ -74,14 +74,11 @@
     }
 }
    
-
     .logo {
         position: relative;
         left: 200px;
         top: 18px;
     }
-
-     
 
     .nav {
         width: 600px;

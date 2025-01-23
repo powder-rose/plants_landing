@@ -9,7 +9,7 @@ body {
 }
 
 .header {
-  width: 100%;
+  width: 100vw;
   margin: 0 auto;
   height: 60px;
   background-color: #1D2F30;
@@ -157,6 +157,7 @@ body {
 }
 .main {
   height: 550px;
+  width: 100vw;
   background: url(../assets/img/plant-main.png) center no-repeat;
   background-size: cover;
 }
@@ -223,7 +224,7 @@ body {
 @media (max-width: 768px) {
   .main__wrapper .main__title {
     margin-left: 20px;
-    width: 550px;
+    width: 100px;
   }
   .main__wrapper .main__desc {
     display: none;
@@ -231,6 +232,10 @@ body {
   .main__wrapper .main__btn {
     margin-left: 20px;
   }
+}
+
+.gallery {
+  background-color: #1D2F30;
 }
 
 /*# sourceMappingURL=index.css.map */

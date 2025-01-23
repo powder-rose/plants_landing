@@ -3,6 +3,7 @@
 
 .main {
     height: 550px;
+    width: 100vw;
     background: url(../assets/img/plant-main.png ) center no-repeat;
     background-size: cover;
 }
@@ -66,7 +67,7 @@
     @media (max-width: 768px) {
         .main__title {
             margin-left: 20px;
-            width: 550px;
+            width: 100px;
         }
 
         .main__desc {
