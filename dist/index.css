@@ -170,9 +170,10 @@ body {
   flex-direction: column;
   column-gap: 20px;
   row-gap: 20px;
-  width: 100%;
+  width: 100vw;
   height: 100%;
   background-color: rgba(17, 27, 27, 0.662745098);
+  margin-bottom: 200px;
 }
 .main__wrapper .main__title {
   font-size: 60px;
@@ -236,6 +237,60 @@ body {
 
 .gallery {
   background-color: #1D2F30;
+}
+.gallery .cards-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  column-gap: 20px;
+  row-gap: 20px;
+}
+.gallery .cards-wrapper .plant-card {
+  width: 255px;
+  height: 493px;
+  outline: 1px solid #000000;
+  margin-bottom: 200px;
+}
+.gallery .cards-wrapper .plant-card .plant-card__title {
+  padding: 10px;
+  font-family: "Comorant" sans-serif;
+  font-size: 24;
+  font-weight: bold;
+  font-style: normal;
+  color: #fff;
+}
+.gallery .cards-wrapper .plant-card .plant-card__desc {
+  font-family: "Open Sans";
+  font-size: 16px;
+  font-weight: 100;
+  font-style: normal;
+  padding: 10px;
+  color: #fff;
+  height: 180px;
+}
+.gallery .cards-wrapper .plant-card .plant-card__btn {
+  margin: 15px;
+  width: 145px;
+  height: 45px;
+  background: none;
+  border: none;
+  outline: 1px solid #BAE249;
+  color: #BAE249;
+  font-family: "Open Sans";
+  font-size: 16px;
+  font-weight: 600;
+  font-style: normal;
+}
+.gallery .cards-wrapper .plant-card .plant-card__btn:hover {
+  background-color: #BAE249;
+  color: #000000;
+}
+
+body {
+  background-color: #1D2F30;
+  overflow-x: hidden;
 }
 
 /*# sourceMappingURL=index.css.map */

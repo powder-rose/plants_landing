@@ -1,5 +1,45 @@
 @use "variables" as v;
+@use "mixins" as m;
 
 .gallery {
     background-color: v.$dark_green_color;
+    
+    .cards-wrapper {
+        @include m.d-flex(center, center, wrap, row, 20px, 20px);
+        
+        .plant-card {
+            width: 255px;
+            height: 493px;
+            outline: 1px solid #000000;
+            margin-bottom: 200px;
+
+            .plant-card__title {
+                padding: 10px;
+                @include m.font('Comorant' sans-serif, 24, bold);
+                color: v.$white_color;
+            }
+
+            .plant-card__desc {
+                @include m.font('Open Sans', 16px, 100);
+                padding: 10px;
+                color: v.$white_color;
+                height: 180px;
+            }
+
+            .plant-card__btn {
+                margin:15px;
+                width: 145px;
+                height: 45px;
+                background: none;
+                border: none;
+                outline: 1px solid v.$light_green_color;
+                color: v.$light_green_color;
+                @include m.font('Open Sans', 16px, 600);
+                    &:hover {
+                        background-color: v.$light_green_color;
+                        color: #000000;
+                }
+            }
+        }
+    }
 }

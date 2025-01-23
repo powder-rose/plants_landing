@@ -6,14 +6,15 @@
     width: 100vw;
     background: url(../assets/img/plant-main.png ) center no-repeat;
     background-size: cover;
+    
 }
 // d-flex($justify: center, $align: center, $wrap: nowrap, $direction: row, $column-gap: 0, $row-gap: 0)
 .main__wrapper {
     @include m.d-flex(center, flex-start, wrap, column, 20px, 20px);
-    width: 100%;
+    width: 100vw;
     height: 100%;
     background-color: #111b1ba9;
-
+    margin-bottom: 200px;
 
     .main__title {
         font-size: 60px;

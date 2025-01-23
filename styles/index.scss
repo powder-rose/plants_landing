@@ -1,3 +1,7 @@
 @use 'variables' as v;
 @use 'importer';
 
+body {
+    background-color: v.$dark_green_color;
+    overflow-x:hidden;
+}
