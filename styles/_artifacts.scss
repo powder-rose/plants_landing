@@ -1,0 +1,136 @@
+@use 'variables' as v;
+@use 'mixins' as m;
+
+.artifacts {
+    
+    @include m.d-flex(start, center, nowrap, column);
+
+    &__title {
+        position: relative;
+        right: 330px;
+        color: v.$white_color;
+        @include m.font('Comorant', 48px, bold, italic);
+        margin-bottom: 40px;
+        
+    }
+
+    &-wrapper {
+        margin-bottom: 200px;
+        @include m.d-flex(center, center, nowrap, row, 20px);
+    }
+    
+    &__img {
+        width: 840px;
+        height: 493px;
+    }
+
+    &-card {
+        width: 255px;
+        height: 493px;
+        background-color: v.$light_green_color;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        row-gap: 10px;
+
+        &__title {
+            @include m.font('Comorant', 24px, bold);
+            line-height: 100%;
+        }
+
+        &__desc {
+            @include m.font("Open Sans", 18px, 300);
+            
+        }
+
+        &__btn {
+            text-align: left;
+            margin-top: 70px;
+            padding-bottom: 10px;                                                                                  ;
+            width: 200px;
+            height: 30px;
+            background: none;
+            border: none;
+            cursor: pointer;
+            @include m.font("Open Sans", 16px, bold);
+
+            &:hover {
+                outline: 1px solid v.$black_color;
+                color: v.$grass_green;
+
+                .arrow-black {
+                    stroke: v.$grass_green;
+                    fill: v.$grass_green;
+                }
+
+            }
+
+             span {
+                width: 100px;
+                height: 20px;
+                align-self: center;
+                position: relative;
+                top: 7px;
+                left: 8px;
+                
+                .arrow-black {
+                    stroke: black;
+                    fill: black;
+                    width: 50px;
+                    height: 20px;
+                }
+            }
+
+
+          
+        }
+    }
+
+    @media (max-width: 1200px) {
+        &-wrapper {
+            @include m.d-flex(center, center, nowrap, column, 0, 20px)
+        }
+
+        &-card {
+            width: 840px;
+            height: 293px;
+        }
+
+        &__title {
+            right: 0;
+        }
+
+    }
+
+    @media (max-width: 992px) {
+
+        &-wrapper {
+            @include m.d-flex(center, center, nowrap, column, 0, 20px)
+        }
+
+        &__img {
+            width: 600px;
+            height: 350px;
+        }
+
+        &-card {
+            width: 600px;
+            height: 293px;
+        }
+
+    }
+
+    @media (max-width: 768px) {
+
+        &__img {
+            display: none;
+        }
+
+        &-card {
+            width: 50vw;
+            min-width: 3c00px;
+            height: fit-content;
+        }
+    }
+
+}
