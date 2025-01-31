@@ -424,9 +424,19 @@ body {
   }
   .artifacts-card {
     width: 50vw;
-    min-width: 3c00px;
+    min-width: 300px;
     height: fit-content;
   }
+}
+
+.help {
+  background: url(../assets/img/background-form.png) center no-repeat;
+  background-size: cover;
+  height: 600px;
+}
+.help .help-wrapper {
+  height: 100%;
+  background-color: rgba(17, 27, 27, 0.662745098);
 }
 
 body {

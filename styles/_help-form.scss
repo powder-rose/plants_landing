@@ -1,0 +1,13 @@
+@use "variables" as v;
+@use "mixins" as m;
+
+.help {
+    background: url(../assets/img/background-form.png) center no-repeat;
+    background-size: cover;
+    height: 600px;
+
+    .help-wrapper {
+        height: 100%;
+        background-color: #111b1ba9
+    }
+}
