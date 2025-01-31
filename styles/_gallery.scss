@@ -6,12 +6,13 @@
     
     .cards-wrapper {
         @include m.d-flex(center, center, wrap, row, 20px, 20px);
+        margin-bottom: 200px;
         
         .plant-card {
             width: 255px;
             height: 493px;
             outline: 1px solid #000000;
-            margin-bottom: 200px;
+            // margin-bottom: 200px;
 
             .plant-card__title {
                 padding: 10px;
