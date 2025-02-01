@@ -16,7 +16,7 @@
 
             .plant-card__title {
                 padding: 10px;
-                @include m.font('Comorant' sans-serif, 24, bold);
+                @include m.font('Comorant' sans-serif, 24px, bold);
                 color: v.$white_color;
             }
 

@@ -6,8 +6,65 @@
     background-size: cover;
     height: 600px;
 
-    .help-wrapper {
+    &-wrapper {
         height: 100%;
-        background-color: #111b1ba9
+        background-color: #111b1ba9;
+        @include m.d-flex(center, center, wrap, column);
+    }
+
+    &-container {
+        width: 836px;
+        left: 300px;
+        @include m.d-flex(center, start, wrap, column, 0, 20px);
+
+        .help__title {
+            color: v.$white_color;
+            @include m.font('Comorant' sans-serif, 48px, bold, italic);
+        }
+
+        .help__desc {
+            color: v.$white_color;
+            @include m.font('Open Sans', 18px, 100)
+
+        }
+
+        .help-form {
+           
+            @include m.d-flex(center, start, nowrap, column, 0, 20px);
+
+            &__name, &__email {
+                width: 350px;
+                height: 45px;
+
+                &::placeholder {
+                    text-indent: 20px;
+                    @include m.font('Open Sans', 16px, 100)
+                }
+            }
+
+            &__btn {
+                width: 145px;
+                height: 45px;
+                border: none;
+                background-color: v.$light_green_color;
+                @include m.font('Open Sans', 16px, bold);
+
+                &:hover {
+                    cursor: pointer;
+                    background-color: v.$grass_green;
+                }
+            }
+
+        }
+
+           
+    }
+
+    @media (max-width: 992px) {
+        
+        &-container {
+            width: 50%;
+            min-width: 350px;
+        }
     }
 }

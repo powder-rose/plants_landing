@@ -258,7 +258,7 @@ body {
 .gallery .cards-wrapper .plant-card .plant-card__title {
   padding: 10px;
   font-family: "Comorant" sans-serif;
-  font-size: 24;
+  font-size: 24px;
   font-weight: bold;
   font-style: normal;
   color: #fff;
@@ -434,9 +434,81 @@ body {
   background-size: cover;
   height: 600px;
 }
-.help .help-wrapper {
+.help-wrapper {
   height: 100%;
   background-color: rgba(17, 27, 27, 0.662745098);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  column-gap: 0;
+  row-gap: 0;
+}
+.help-container {
+  width: 836px;
+  left: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-wrap: wrap;
+  flex-direction: column;
+  column-gap: 0;
+  row-gap: 20px;
+}
+.help-container .help__title {
+  color: #fff;
+  font-family: "Comorant" sans-serif;
+  font-size: 48px;
+  font-weight: bold;
+  font-style: italic;
+}
+.help-container .help__desc {
+  color: #fff;
+  font-family: "Open Sans";
+  font-size: 18px;
+  font-weight: 100;
+  font-style: normal;
+}
+.help-container .help-form {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  column-gap: 0;
+  row-gap: 20px;
+}
+.help-container .help-form__name, .help-container .help-form__email {
+  width: 350px;
+  height: 45px;
+}
+.help-container .help-form__name::placeholder, .help-container .help-form__email::placeholder {
+  text-indent: 20px;
+  font-family: "Open Sans";
+  font-size: 16px;
+  font-weight: 100;
+  font-style: normal;
+}
+.help-container .help-form__btn {
+  width: 145px;
+  height: 45px;
+  border: none;
+  background-color: #BAE249;
+  font-family: "Open Sans";
+  font-size: 16px;
+  font-weight: bold;
+  font-style: normal;
+}
+.help-container .help-form__btn:hover {
+  cursor: pointer;
+  background-color: #688B05;
+}
+@media (max-width: 992px) {
+  .help-container {
+    width: 50%;
+    min-width: 350px;
+  }
 }
 
 body {
