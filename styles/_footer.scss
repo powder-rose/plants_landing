@@ -1,0 +1,30 @@
+@use 'variables' as v;
+@use 'mixins' as m;
+
+.footer {
+
+    .social {
+
+        width: 100vw;
+        height: 60px;
+        background-color: v.$footer_dark_green;
+        @include m.d-flex(center, center, wrap, row, 30px);
+
+        .footer-icon {
+            width: 24px;
+            height: 24px;
+            fill: v.$grey_color;
+            &:hover {
+                fill: v.$light_green_color;
+            }
+        }
+    }
+
+    .figcaption  {
+         text-align: center;
+         color: v.$grey_color;
+         @include m.font("Open Sans", 12px, 300);
+        }
+    
+    
+}

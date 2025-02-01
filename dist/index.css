@@ -511,6 +511,35 @@ body {
   }
 }
 
+.footer .social {
+  width: 100vw;
+  height: 60px;
+  background-color: #0B1919;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  column-gap: 30px;
+  row-gap: 0;
+}
+.footer .social .footer-icon {
+  width: 24px;
+  height: 24px;
+  fill: #899D9D;
+}
+.footer .social .footer-icon:hover {
+  fill: #BAE249;
+}
+.footer .figcaption {
+  text-align: center;
+  color: #899D9D;
+  font-family: "Open Sans";
+  font-size: 12px;
+  font-weight: 300;
+  font-style: normal;
+}
+
 body {
   background-color: #1D2F30;
   overflow-x: hidden;
